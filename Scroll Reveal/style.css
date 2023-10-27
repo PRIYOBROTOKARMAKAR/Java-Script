@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    background: #2C3E23;
+}
+section{
+    position: relative;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    padding:80px 100px;
+    color:#fff;
+}
+
+.container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+h2{
+    font-size: 3vw;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.content{
+    position: relative;
+    width:1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow:hidden;
+    
+}
+.image img{
+    z-index: 111;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.text-box{
+    z-index: 222;
+    background: rgba(0,0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    padding:40px;
+    max-width:400px;
+    border: 1px solid rgba(0,0, 0, 0.1);
+    border-radius: 20px;
+    transform: translate(-80px,50px);
+}
+
+.media-icon{
+    margin-top: 50px;
+}
+.media-icon a{
+    color:white; 
+    font-size:2vw;
+    margin: 50px;
+}
+
+.section-title{
+    font-size: 2vw;
+    margin-bottom: 30px;
+    
+}
+.info-title{
+    font-size: 2vw;
+    margin-left: 50px;
+    transform: translateX(-190px);  
+}
+.info{
+    width: 700px;
+    margin-left: 50px;
+}
+
+
+.media-info{
+    width: 400px;
+    margin-left: 50px;
+}
+.media-info li{
+    list-style-type: none;
+    font-size: 1em;
+}
+.media-info li a{
+    color:white;
+    text-decoration:none;
+    font-weight: 200px;
+}
+.media-info li:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1),.media-info li:nth-child(5){
+    padding-left:130px;
+}
+.media-info li:nth-child(2),.media-info li:nth-child(4){
+    padding-left:50px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Scrolling</title>
+  </head>
+  <body>
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Beautiful Scene</h2>
+        <div class="content">
+          <div class="image">
+            <img src="mountain-landscape-2031539_1280.jpg" alt="" />
+          </div>
+          <div class="text-box">
+            <h3>Alluring</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              itaque corrupti ex reprehenderit illo saepe possimus eos, debitis
+              atque. Distinctio at qui quasi provident? Enim nam ipsa rerum
+              inventore nostrum!
+            </p>
+          </div>
+        </div>
+        <div class="media-icon">
+          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">Alluring Scene</h3>
+        <div class="content">
+          <div class="image">
+            <img src="heart-1776746_1280.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h3 class="info-title">Description</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              facere illum numquam. Ratione odit quisquam soluta, maiores
+              voluptatem quos facere libero officiis, ullam delectus quae dolore
+              blanditiis iste provident at!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-03">
+      <div class="container">
+        <h1 class="section-title">About Us</h1>
+        <div class="content">
+          <div class="media-info">
+            <li>
+              <a href="#" class="icon"
+                ><i class="fab fa-facebook">Facebook</i></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon"><i class="fab fa-twitter">twitter</i></a>
+            </li>
+            <li>
+              <a href="#" class="icon"
+                ><i class="fab fa-instagram">instagram</i></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon"><i class="fab fa-youtube">youtube</i></a>
+            </li>
+            <li>
+              <a href="#" class="icon"
+                ><i class="fab fa-linkedin">linkedin</i></a
+              >
+            </li>
+          </div>
+          <div class="image">
+            <img src="frankfurt-3917054_1280.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+      ScrollReveal().reveal(".main-title,.section-title", {
+        delay: 500,
+        origin: "left",
+      });
+      ScrollReveal().reveal(".sec-01 .image", { delay: 600, origin: "bottom" });
+      ScrollReveal().reveal(".sec-01 .text-box,.info", {
+        delay: 700,
+        origin: "right",
+      });
+      ScrollReveal().reveal(".media-icon i", {
+        delay: 600,
+        origin: "bottom",
+        interval: 200,
+      });
+      ScrollReveal().reveal(".sec-02 .image", { delay: 600, origin: "bottom" });
+      ScrollReveal().reveal(".media-info li", {
+        delay: 600,
+        origin: "left",
+        interval: 200,
+      });
+      ScrollReveal().reveal(".sec-03 .image", { delay: 700, origin: "right" });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
